@@ -55,3 +55,4 @@
 	<a href="crud.php"> <h1> Crud </h1> </a>
 	<a href="registration.php"> <h1> Registration </h1> </a>
 	<a href="login.php"> <h1> login </h1> </a>
+	<a href="cookie.php"> <h1> cookie </h1> </a>
