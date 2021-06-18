@@ -1,0 +1,1367 @@
+CHAPTER 1
+
+1.1 INTRODUCTION:
+The boom in cloud computing over the past few years has led to a situation that is common to many innovations and new technologies: many have heard of it, but far fewer actually understand what it is and, more importantly, how it can benefit them. This whitepaper will attempt to clarify these issues by offering a comprehensive definition of cloud computing, and the business benefits it can bring. Security challenges are still amongst the biggest obstacles when considering the adoption of cloud services. This triggered a lot of research activities, resulting in a quantity of proposals targeting the various cloud security threats. Alongside with these security issues the cloud paradigm comes with a new set of unique features which open the path towards novel security approaches, techniques and architectures. This provides a survey on the achievable security merits by making use of multiple distinct clouds simultaneously. Various distinct architectures are introduced and discussed according to their security and privacy capabilities and prospects.Cloud computing offers dynamically scalable resources provisioned as a service over the Internet. The third-party, on-demand, self-service, pay-per-use and seamlessly scalable computing resources and services offered by the cloud paradigm promise to reduce capital as well as operational expenditures for hardware and software.
+Usually, make sure that monolithic system track across various PCs means splitting the file into distinct client and server modules. In such schemes, the client module controlled the user interface and the server provided back-end handling, such as record entrance, printing, and so on. As computers proliferated, dropped in cost, and became connected by ever-higher bandwidth networks, splitting software systems into multiple components became more convenient, with each component running on a different computer and performing a specialized function. This approach simplified development, management, administration, and often improved performance and robustness, since failure in one computer did not necessarily disable the entire system.
+
+1.2 OBJECTIVE:
+The project has the following Main Objective are:
+1.	To overcome Cloud Computing Security Challenges.
+2.	Techniques for Protecting Data in the Cloud.
+3.	Strategies for Secure Transition to the Cloud.
+4.	Prevent unauthorized access to cloud computing infrastructure resources. 
+5.	Protect Postal Service data from unauthorized access, disclosure, modification, and monitoring.
+6.	Reduced operational time.
+7.	Reduced hardware and software usage time.
+
+1.3 STATEMENT OF A PROBLEM
+Cloud computing as a new innovation and ultimate solution for utility and distributed computing on Web Applications has been used by billions of users across the globe since its inception. Its implementation and impact cut across several fields, disciplines and businesses across the globe. Nevertheless, cloud computing has been bedevilled by certain obstacles, the goal of this research study is to discern the factors affecting performance and provide some solutions or guidelines to cloud users that might run into performance problems:
+1.  Integrity and protection of information deployed or stored in the cloud domain as opposed         to the traditional approach of information storage.
+2.  Ability to transform data from diverse sources into intelligence and deliver intelligence information to right users and systems.
+3.  The need for load balancing and traffic control when multiple users access the cloud service.
+4.  Need to address the scalability issue: Large scale data, high performance computing, automaton, response time, rapid prototyping, and rapid time to production.
+
+
+
+
+
+ 1.4  LITERATURE REVIEW:
+
+This approach shows that, Cloud Computing becomes thriving and standard business model attribute charming options Additionally to the benefits at hand, the previous options additionally lead to serious cloud specific security problems. The folks whose concern is the Cloud security still hesitate their business to cloud computing. There are main challenges for building a secure and trustworthy cloud system. 
+The use of multiple distinct cloud simultaneously. The various distinct architecture and introduced discussed according their security and privacy capabilities and prospects. Cloud computing supply a replacement of computing with varied services models that facilitates completely different services to the users. As all the info of associate degree enterprises processed remotely and exchanges via completely different network. Security is necessary parameter and also the service supplier make sure that there no authorized access to the sensitive information of associate degree enterprise throughout the info information. They security and design an efficient decryption, and also design an efficient attribute revocation method that can achieve both forward backward securities. This could be done once, multiple times, or unceasingly. associate degree offender that additionally has access to the process logic of the cloud can even modify the functions and their input and output information. despite the fact that within the majority of cases it's going to be legitimate to assume a cloud supplier to be honest and accountable manner handling the customers’ affairs during a respectful, there still remains a risk of malicious staff of the cloud supplier, palmy attacks and comptonization by third parties, or of actions ordered by a subpoena.
+Studies on the security of the data storage have witnessed numerous research publications most recently. It is important to strengthen cloud storage security to adhere to Service Level Agreement (SLA). Notable work done by Popa et al. has emphasized on the SLA by introducing a framework called as Cloud Proof. The framework allows the customer to identify the various forms of violations towards data integrity on
+Amazon S3 cloud services. The authors have studied the framework using performance parameters like storage overhead and processing time. A similar form of a framework to identify the violations is proposed by Tang et al.; a framework called FADE using conventional cryptography techniques is introduced. The framework is capable of detection of file cloud storage on Amazon S3 cloud. The authors have studied the effectiveness of FADE using rate of data transmission and processing time required for key management. Ren et al. have proposed a technique of secure data accessibility for mobile application in cloud computing. The study has introduced an encryption policy to maintain the integrity of the data during uploading and downloading the file from the cloud servers. However, the study provides less evidence of its outcome. Study towards security over data sharing was presented by Dong et al., where the authors discussed their security algorithm using a encryption scheme. The outcome of the study is found to support identity-based encryption scheme as well as public-key encryption scheme at the same time. The technique performs a transformation of the encrypted data of the customer into encrypted text for data security
+
+
+
+
+CHAPTER 2
+
+ REASERCH METHODOLOGY AND IMPLEMETATION METHOD
+
+2.1 Development Phases: 
+
+Step 1: Registration Module 
+In registration get username, email address, password, user generate random verification code. New Random. Next () is used to generate random code. The user can sign in and proceed to next step to verification code. Mail is to user email address by using SMTP protocol. The user can verify the code if verification code is blank then redirect to login page else matched then update user status field with text active and redirect user to the home page. 
+
+Step 2: FTP Setting Module 
+The proposed system, file get distributed at three different location. First location that is our application and next two more FTP where 2nd and 3rd file is store. In proposed system, we design setting page where this will be further used by application to upload and download file from created table. Insert into table FTP details. 
+
+Step 3: Upload and Download module 
+Develop a web interface to upload and download files in cloud storage. The different file uploading links are open. The user can choose the link which we want to upload on cloud. User can upload the file on cloud such as doc file, video, mp3, etc. 
+Homepage will show list of files uploaded by user from user specific directory. In proposed system, we use data list to show file list. File class to get folder and file details like file name, file size.
+• Upload file by using file uploader control we can let the user select file to be upload. 
+• Get the sever path by using Server. Map Path () function to get path of server directory. 
+Step 4: File encryption technique module 
+Setting up and configuring different cloud server in order to having storage cloud access. Each clouds its own server. Developing encryption technique like RSA, AES, DES for file decryption before storing it on cloud. In proposed system, we use combination of AES algorithm and SHA-1 algorithm for encryption and splitting of File. 
+Step 5: File splitting and clubbing module 
+In Proposed system, we are splitting the file in different portions then encode and store it on different cloud. Meta data necessary for decrypting and moving a file will be stored in metadata management server. File can club with another file.
+
+
+
+Advantages: 
+ • Provide authentication. 
+• Data Security. 
+• Restrict direct access of files. 
+• The detection of masquerade activity. 
+• Data confidentiality. 
+• Efficiency. 
+
+
+2.2 Scope: 
+It introduces new cloud security management framework. The system uses the hashing function & key management to provide the security and authentication to target data. Cloud computing supports distributed service-oriented architecture, multi-users and multi-domain administrative infrastructure, it is more prone to security threats and vulnerabilities. At present, a major concern in cloud adoption is its security and Privacy. Cloud computing nowadays is the precondition and essential part of the computing globe using whole day developing in its usages and popularity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER 3
+
+3.1 SOFTWARE AND HARDWARE TOOL TO BE USED:
+HARDWARE TOOL TO BE USED:
+•	PC preferably running window 10
+•	PROCESSOR         : 32 BIT, Pentium-IV
+•	RAM                       : 1GB          
+•	HARD DISK           : 40GB
+•	CLOCK SPEED      : 266MH
+
+SOFTWARE TOOL TO BE USED:
+•	http://visualstudio.microsoft.com/downloads/
+•	.net:-  NET Framework (pronounced dot net) is a software framework developed by Microsoft that runs primarily on Microsoft Windows. It includes a large class library named Framework Class Library (FCL) and provides language interoperability (each language can use code written in other languages) across several programming languages. Programs written for .NET Framework execute in a software environment (in contrast to a hardware environment) named Common Language Runtime (CLR), an application virtual machine that provides services such as security, memory management, and exception handling. (As such, computer code written using .NET Framework is called "managed code".) FCL and CLR together constitute .NET Framework provides user interface, data access, database connectivity, cryptography, web application development, numeric algorithms, and network communications. Programmers produce software by combining their source code with .NET Framework and other libraries. The framework is intended to be used by most new applications created for the Windows platform. Microsoft also produces an integrated development environment largely for .NET software called Visual Studio. .NET Framework began as proprietary software, although the firm worked to standardize the software stack almost immediately, even before its first release. Despite the standardization efforts, developers, mainly those in the free and open-source software communities, expressed their unease with the selected terms and the prospects of any free and open-source implementation, especially regarding software patents. Since then, Microsoft has changed .NET development to more closely follow a contemporary model of a community-developed software project, including issuing an update to its patent promising to address the concerns.
+
+
+
+
+
+
+3.2 ALGORITHMN USED FOR ENCRYPTION AND DECRYPTION:
+The Advanced Encryption Standard (AES), also known by its original name Rijndael (Dutch pronunciation is a specification for the encryption of electronic data established by the U.S. National Institute of Standards and Technology (NIST) in 2001. AES is a subset of the Rijndael block cipher developed by two Belgian cryptographers, Vincent Rijmen and Joan Daemen, who submitted a proposal to NIST during the AES selection process. Rijndael is a family of ciphers with different key and block sizes.
+For AES, NIST selected three members of the Rijndael family, each with a block size of 128 bits, but three different key lengths: 128, 192 and 256 bits.AES has been adopted by the U.S. government and is now used worldwide. It supersedes the Data Encryption Standard (DES), which was published in 1977. The algorithm described by AES is a symmetric-key algorithm, meaning the same key is used for both encrypting and decrypting the data.In the United States, AES was announced by the NIST as U.S. FIPS PUB 197 (FIPS 197) on November 26, 2001. This announcement followed a five-year standardization process in which fifteen competing designs were presented and evaluated, before the Rijndael cipher was selected as the most suitable (see Advanced Encryption Standard process for more details).AES became effective as a federal government standard on May 26, 2002, after approval by the Secretary of Commerce. AES is included in the ISO/IEC 18033-3 standard. AES is available in many different encryption packages, and is the first (and only) publicly accessible cipher approved by the National Security Agency (NSA) for top secret information when used in an NSA approved cryptographic module .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.3 SECURITY ISSUES TO THE CLOUD:
+security necessities of a cloud and non-cloud server farm are genuinely similar. The Cloud Security Alliance's starting report contains an alternate kind of scientific classification in light of diverse security areas and procedures that should be followed by and large cloud arrangement. Some protection and security-related issues that are accepted to have long haul essentialness for Cloud computing are:
+3.3.1 Security Issues Face by Cloud Computing Data Access Control:
+Generally confidential information will be illicitly accessed attributable to lack of secured information access management.
+Sensitive information in an exceedingly cloud computing surrounding emerge as major problem with respect to security in an exceedingly cloud-based system. Information exists for an extended time in an exceedingly cloud, the upper chance of unauthorized access.
+3.3.2 Data Integrity: Data integrity includes the subsequent cases, once some human error occurs once information is entered. Errors might occur once information is transmitted from one laptop to another; otherwise error will occur from some hardware malfunctions, like disk crashes. Code bug or virus can even build viruses. Therefore, at constant time, several cloud computing services clients and supplier accessed & modify information.
+Therefore, there's a desire of some information integrity methodology in cloud.
+3.3.3 Data Theft: Cloud computing uses external information server for price affection & versatile for operation. Therefore, there’s an opportunity of information will purloined from external server.
+3.3.4 Data Loss: Data loss may be a terribly major problem in Cloud computing. If banking and business transactions, analysis and development concepts are all going down on-line, unauthorized individuals are going to be ready to access the data shared. Albeit everything is secure what if a server goes down or crashes or attacked by a scourge, the complete system would go down & doable information loss might occur. If the seller closes attributable to money or legal issue there shall be loss of information for the client or user. Client won’t bready to access that information as a result of data is not any additional obtainable for the customer.
+3.3.5 Privacy Issues: Security of the client Personal data is incredibly necessary just in case of cloud computing.
+Most of the server is external, that the seller ought to make certain that’s well secured from alternative operators.
+3.3.6Security problems in supplier level: A Cloud is sweet only there's a decent security provided by the seller to the shoppers. Supplier ought to build a decent security layer for the client and user. And may make certain that the server is well secured from all the external threats it's going to come upon.
+3.3.7 User level Issues: User ought to make certain that as a result of its own action, there shouldn’t be any loss of information or meddling of information for alternative users who victimization constant cloud.
+
+
+CHAPTER 4
+
+4.1 FLOW CHART:
+
+
+
+ 
+
+Figure.2. Flow Chart Diagram.
+
+
+
+
+
+
+4.2 DATA FLOW DIAGRAM:
+The Data flow diagram can be explained as the separate levels indicating the individual complexity in each level of the system and gives a detailed explanation in the further levels that are following them.
+4.2.1 Level 0
+Initially in the first level of the Data flow the level 0 explains the basic outline of the system. The end-user sends the packets to the system to determine the source and destination address. The diagram marked as the 0 represents the complete Packet watching system which simply represents the basic operation that is being performed by it in the initial level.
+
+ 
+Figure.3. Level 0 Diagram.
+
+4.2.2 Level 1
+
+The level 1 of the Data flow diagram given explains in detail about the Packet watching system which was marked as 0 in the previous level. In this level the end-user who passes the request for the system enters into the first process, the capturing process and then to the processing module. After processing the packets, it was sent for storing.
+
+
+
+
+
+
+
+
+
+
+
+
+Figure.4. Level 1 Diagram. 
+4.2.3 Level 2
+The level 2 provides the clear explanation about the whole system. In this level first we have to select the packet and perform test over that selected packets. Then identify the end address of the packet and send that packet for processing. After processing the packet it was send to the identity content. Then send the processed packet for storing and display the source and destination addresses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure.5. Level 2 Diagram
+
+
+
+
+
+
+
+
+
+
+
+
+4.3 USE CASE DIAGRAM: 
+
+
+
+ 
+Figure.6. Use  Diagram 
+4.4 Cloud Computing Security Challenges
+Data protection tops the list of cloud concerns today. “Cloud Computing” study, which measured cloud computing trends among technology decision makers.
+When it comes to public, private, and hybrid cloud solutions, the possibility of compromised information creates tremendous angst. Organizations expect third-party providers to manage the cloud infrastructure, but are often uneasy about granting them visibility into sensitive data.
+There are complex data security challenges in the cloud:
+1.	The need to protect confidential business, government, or regulatory data
+2.	Cloud service models with multiple tenants sharing the same infrastructure
+3.	Data mobility and legal issues relative to such government rules as the EU Data Privacy Directive
+4.	Lack of standards about how cloud service providers securely recycle disk space and erase existing data
+5.	Auditing, reporting, and compliance concerns
+6.	Loss of visibility to key security and operational intelligence that no longer is available to feed enterprise IT security intelligence and risk management
+7.	A new type of insider who does not even work for your company, but may have control and visibility into your data
+
+4.5 Techniques for Protecting Data in The Cloud
+Traditional models of data protection have often focused on network-centric and perimeter security, frequently with devices such as firewalls and intrusion detection systems. But this approach does not provide sufficient protection against APTs, privileged users, or other insidious types of security attacks.
+The encryption implementation must incorporate a robust key management solution to provide assurance that the keys are sufficiently protected. It’s critical to audit the entire encryption and key management solution. Encryption works in concert with other core data security technologies, gleaning increased security intelligence, to provide a comprehensive multilayered approach to protecting sensitive data—and mitigate risk in or out of the cloud.
+Therefore, any data-centric approach must incorporate encryption, key management, strong access controls, and security intelligence to protect data in the cloud and provide the requisite level of security. By implementing a layered approach that includes these critical elements, organizations can improve their security posture more effectively and efficiently than by focusing exclusively on traditional network-centric security methods.
+“It is important to utilize security controls that protect sensitive data no matter where it lives, as point solutions by their very nature provide only limited visibility,” says Tumulak. He emphasizes that an effective cloud security solution should incorporate three key capabilities:
+1.	Data lockdown
+2.	Access policies
+3.	Security intelligence
+
+4.6 Strategies for Secure Transition to The Cloud
+The fundamental key to data security is to protect what matters. Solutions that enable companies to confidently transition to the cloud while still leveraging many of their traditional infrastructure and investments offer significant advantages.
+Data Security solves the enterprise cloud security conundrum by protecting data inside of the operating environment while establishing security policies and maintaining control through a centralized management interface. One key differentiator is that works with cloud providers and enterprises to protect data regardless of whether it is located in physical, virtual, or cloud environments. This architecture enables enterprises to control access to the data itself, even as the virtual machine migrates to the virtual and cloud world. Organizations can establish access policies and achieve complete control of data in private, public, or hybrid cloud environments.
+
+4.7 SPLIT ALGORITHM
+File splitting and clubbing
+ In Proposed system, we are splitting the file in different portions then encode and store it on different cloud. Meta data necessary for decrypting and moving a file will be stored in metadata management server. File can club with another file.
+Folder Lock
+ in folder lock approach, while locking a folder we create xml file inside folder with a password. When user browse for a folder processing our program the encryption is done through the following steps
+Step 1: Start.
+Step 2: Accept file name and password.
+Step 3: Generate unique random number from the password, which serves as the key.
+Step 4: Split the file and the key into n splits.
+Step 5: Encrypt the first split of the file with the first split of the key, second split of file with second split of key and so on.
+Step 6: Combine the splits to get the file
+Step 7: Stop
+
+
+
+
+
+
+
+
+4.8 Encryption
+
+
+
+ 
+
+Figure 7: Encryption
+
+
+
+
+
+
+
+	
+
+4.9 Flowchart – Decryption
+
+
+
+
+ 
+Figure 8: Decryption
+
+
+
+
+
+
+
+
+
+
+CHAPTER 5
+
+1.	PROGRAM OF REGISTRATION PAGE:
+       
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace cafemanagement
+{
+    public partial class Registration : Form, IDisposable
+    {
+      
+        save s = new save();
+        public Registration()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == string.Empty)
+            {
+                errorProvider1.SetError(textBox1, "Required");
+            }
+            else if (textBox2.Text == string.Empty)
+            {
+                errorProvider1.SetError(textBox2, "Required");
+            }
+            else if (textBox3.Text == string.Empty)
+            {
+                errorProvider1.SetError(textBox3, "Required");
+            }
+            else if (textBox4.Text == string.Empty)
+            {
+                errorProvider1.SetError(textBox4, "Required");
+            }
+            else
+            {
+               
+ s.insert("insert into Registration([Username],[Password],[Emailid],[Contactno]) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox4.Text + "','" + textBox3.Text + "')");
+                MessageBox.Show("information saved successfully");
+                s = null;
+               
+                textBox1.Text = string.Empty;
+                textBox2.Text = string.Empty;
+                textBox3.Text = string.Empty;
+                textBox4.Text = string.Empty;
+                
+            }
+
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar)
+         && !char.IsDigit(e.KeyChar)
+         && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void textBox4_Leave(object sender, EventArgs e)
+        {
+            System.Text.RegularExpressions.Regex rEMail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (rEMail.IsMatch(textBox4.Text) == true)
+            {
+            }
+            else
+            {
+                MessageBox.Show("invalid email");
+            }
+        }
+
+        private void textBox4_Validating(object sender, CancelEventArgs e)
+        {
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+ OUTPUT:
+
+
+
+ 
+
+Figure.9.  Output of registration 
+2.	PROGRAM OF LOGIN PAGE:
+using System;
+using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.IO;
+
+namespace cafemanagement
+{
+    public partial class Login : Form
+    {
+ SqlConnection cn = new     SqlConnection(ConfigurationManager.ConnectionStrings["cloud"].ConnectionString);
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            if (textBox1.Text == string.Empty)
+            {
+                errorProvider1.SetError(textBox1, "Required");
+            }
+            else if (textBox2.Text == string.Empty)
+            {
+                errorProvider1.SetError(textBox2, "Required");
+            }
+          
+            else 
+            {
+                
+                cn.Open();
+ SqlCommand cmd = new SqlCommand("select [username],password from    [registration] where [username]='" + textBox1.Text + "' and password='" + textBox2.Text + "'", cn);
+             SqlDataReader dr = cmd.ExecuteReader();
+              if (dr.Read())
+                {
+      if (textBox1.Text == dr[0].ToString() || textBox2.Text ==  dr[1].ToString())
+                    {
+                        FileSplitter.Master  e1 = new    FileSplitter.Master (textBox1.Text);
+                        e1.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password");
+                }
+                cn.Close();
+                
+            }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+
+OUTPUT:
+  
+
+ 
+
+
+Figure.10. Output of login
+
+
+ 
+3.	PROGRAM OF USER PAGE:
+using System;
+using System. Collections.Generic;
+using System. ComponentModel;
+using System. Data;
+using System. Drawing;
+using System. Text;
+using System. Windows.Forms;
+using System.Reflection;
+using System.IO;
+using System. Diagnostics;
+
+namespace FileSplitter
+{
+    public partial class Master : Form
+    {
+        private int childFormNumber = 0;
+
+        public Master(string name)
+        {
+            InitializeComponent();
+            label1.Text = name;
+        }
+
+        private void ShowNewForm(object sender, EventArgs e)
+        {
+            Form childForm = new Form();
+            childForm.MdiParent = this;
+            childForm.Text = "Window " + childFormNumber++;
+            childForm.Show();
+        }
+
+        private void OpenFile(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+                   openFileDialog.InitialDirectory = 
+      Environment.GetFolderPath(Environment.SpecialFolder.Personal);             
+            openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
+            {
+                string FileName = openFileDialog.FileName;
+            }
+        }
+
+
+        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.InitialDirectory = 
+            Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
+            {
+                string FileName = saveFileDialog.FileName;
+            }
+        }
+
+        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void StatusBarToolStripMenuItem_Click(object sender, EventArgse)
+        {
+         
+        }
+
+        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgse)
+        {
+            LayoutMdi(MdiLayout.TileVertical);
+        }
+
+
+      private void TileHorizontalToolStripMenuItem_Click(object sender,EventArgse)     
+        {
+            LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.ArrangeIcons);
+        }
+
+        private void CloseAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form childForm in MdiChildren)
+            {
+                childForm.Close();
+            }
+        }
+
+   private void splitMultimediaToolStripMenuItem_Click(object sender, EventArgse)
+        {
+            splitnjoin f = new splitnjoin(label1.Text);	
+            f.Show();
+        }
+
+        private void folderLockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void compressToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void encryptToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void shareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void downloadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+
+        private void signoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        static DirectoryInfo exeFolder, projectFolder, sampleImagesFolder;
+       
+
+        private void stegnographyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
+OUTPUT:
+
+ 
+
+
+Figure.11. Output of user page 
+4.	PROGRAM OF SPLITING:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.IO.Compression;
+using System.Security.AccessControl;
+using System.Xml;
+
+
+
+namespace FileSplitter
+{
+    public partial class splitnjoin : Form
+    {
+       
+        public splitnjoin(string name)
+        {
+            
+             
+            InitializeComponent();
+            
+        }
+
+
+        private void SplitFile(string InputPath, string OutputPath, int OutputFiles)
+        {
+            // Store the file in a byte array
+            Byte[] byteSource = System.IO.File.ReadAllBytes(InputPath);
+            // Get file info
+            FileInfo fiSource = new FileInfo(txtSourceFile.Text);
+            // Calculate the size of each part
+            int partSize = (int)Math.Ceiling((double)(fiSource.Length / OutputFiles));
+            // The offset at which to start reading from the source file
+            int fileOffset = 0;
+
+            // Stores the name of each file part
+            string currPartPath;
+            // The file stream that will hold each file part
+            FileStream fsPart;
+            // Stores the remaining byte length to write to other files
+            int sizeRemaining = (int)fiSource.Length;
+
+            // Loop through as many times we need to create the partial files
+            for (int i = 0; i < OutputFiles; i++)
+            {
+                // Store the path of the new part
+  currPartPath = OutputPath + "\\" + fiSource.Name + "." + String.Format(@"{0:D4}", i) + ".part";
+                // A filestream for the path
+                if (!File.Exists(currPartPath))
+                {
+                    fsPart = new FileStream(currPartPath, FileMode.CreateNew);
+                // Calculate the remaining size of the whole file
+                    sizeRemaining = (int)fiSource.Length - (i * partSize);
+               // The size of the last part file might differ because a file doesn't always split equally                    
+                    if (sizeRemaining < partSize)
+                    {
+                        partSize = sizeRemaining;
+                    }
+
+
+
+                    fsPart.Write(byteSource, fileOffset, partSize);
+                    fsPart.Close();
+                    fileOffset += partSize;
+				}
+			}
+		}
+
+
+ OUTPUT:
+ 
+Figure.12. output of  split 
+5.	PROGRAM OF ENCRYPTION AND DECRYPTION:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Security.Cryptography;
+using System.IO;
+using System.IO.Compression;
+
+namespace howto_crypt_file
+{
+    public partial class Form2 : Form
+    {
+        public Form2(string name)
+        {
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void EncryptFile(string inputFile, string outputFile)
+        {
+
+            try
+            {
+        
+                string password = @"myKey123"; // Your Key Here
+                UnicodeEncoding UE = new UnicodeEncoding();
+                byte[] key = UE.GetBytes(password);
+
+                string cryptFile = outputFile;
+                FileStream fsCrypt = new FileStream(cryptFile, FileMode.Create);
+
+                RijndaelManaged RMCrypto = new RijndaelManaged();
+
+                CryptoStream cs = new CryptoStream(fsCrypt,
+                    RMCrypto.CreateEncryptor(key, key),
+                    CryptoStreamMode.Write);
+
+              
+
+                FileStream fsIn = new FileStream(inputFile, FileMode.Open);
+
+                int data;
+                while ((data = fsIn.ReadByte()) != -1)
+                    cs.WriteByte((byte)data);
+
+
+                fsIn.Close();
+                cs.Close();
+                fsCrypt.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Encryption failed!", "Error");
+            }
+        }
+      
+        private void DecryptFile(string inputFile, string outputFile)
+        {
+
+            {
+                string password = @"myKey123"; // Your Key Here
+
+                UnicodeEncoding UE = new UnicodeEncoding();
+                byte[] key = UE.GetBytes(password);
+
+                FileStream fsCrypt = new FileStream(inputFile, FileMode.Open);
+
+                RijndaelManaged RMCrypto = new RijndaelManaged();
+
+                CryptoStream cs = new CryptoStream(fsCrypt,
+                    RMCrypto.CreateDecryptor(key, key),
+                    CryptoStreamMode.Read);
+
+                FileStream fsOut = new FileStream(outputFile, FileMode.Create);
+
+                int data;
+                while ((data = cs.ReadByte()) != -1)
+                    fsOut.WriteByte((byte)data);
+
+                fsOut.Close();
+                cs.Close();
+                fsCrypt.Close();
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string filename=string.Empty;
+            OpenFileDialog file=new OpenFileDialog();         
+          
+            if(file.ShowDialog()==DialogResult.OK)
+            {
+                filename=file.FileName;
+            }
+            SaveFileDialog sdialog = new SaveFileDialog();
+            sdialog.ShowDialog();
+            string path = sdialog.FileName;
+            EncryptFile(filename, path);
+            MessageBox.Show("Encrypt");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog=new OpenFileDialog();
+            dialog.ShowDialog();
+            string fiename=dialog.FileName;
+            SaveFileDialog dialog1=new SaveFileDialog();
+            dialog1.ShowDialog();
+            string decryptfile=dialog1.FileName;
+            DecryptFile(fiename, decryptfile);
+            MessageBox.Show("decrypt");
+        }
+    }
+}
+
+
+
+
+
+
+
+OUTPUT:
+
+
+ 
+
+Figure.13. Output of Encryption
+
+
+
+
+
+ 
+6.	PROGRAM OF MERGING:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.IO.Compression;
+using System.Security.AccessControl;
+using System.Xml;
+
+
+
+namespace FileSplitter
+{
+
+  private void JoinFiles(string FolderInputPath, string FileOutputPath)
+        {
+            try
+            {
+                DirectoryInfo diSource = new DirectoryInfo(FolderInputPath);
+                FileStream fsSource = new FileStream(FileOutputPath, FileMode.Append);
+
+                foreach (FileInfo fiPart in diSource.GetFiles(@"*.part"))
+                {
+                    Byte[] bytePart = System.IO.File.ReadAllBytes(fiPart.FullName);
+                    fsSource.Write(bytePart, 0, bytePart.Length);
+                     
+                }
+                fsSource.Close();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void btnBrowseFolder_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (openFolder.ShowDialog() == DialogResult.OK)
+                {
+                    txtSourceFolder.Text = openFolder.SelectedPath;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void btnJoin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (saveOutput.ShowDialog() == DialogResult.OK)
+                {
+                    JoinFiles(txtSourceFolder.Text, saveOutput.FileName);                    
+                    string folderpath = txtSourceFolder.Text;  
+         
+                   
+                    MessageBox.Show("Merge successful");
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void btnBrowseFile_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (openSource.ShowDialog() == DialogResult.OK)
+                {
+                    txtSourceFile.Text = openSource.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        private void btnSplit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (saveToFolder.ShowDialog() == DialogResult.OK)
+                {
+                    SplitFile(txtSourceFile.Text, saveToFolder.SelectedPath, (int)numOutputs.Value);                   
+                    string folderpath = saveToFolder.SelectedPath;                    
+                    MessageBox.Show("Split successful");
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+         
+        
+        private void splitnjoin_Load(object sender, EventArgs e)
+        {
+
+        }       
+
+    }
+        
+  }
+
+OUTPUT:
+
+
+ 
+
+Figure.14. Output of merge 
+7.	PROGRAM OF SHARE:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.Net;
+using System.Security.Cryptography;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace FileSplitter
+{
+    public partial class share : Form
+    {
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cloud"].ConnectionString);
+        public share(string name)
+        {
+            InitializeComponent();
+            label2.Text = name;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Server1")
+            {
+                string ftplocation = "ftp://107.180.1.81";
+                string file = lblfilepath.Text; // Or on FreeBSD: "/usr/home/jared/test2.txt";
+                string user = "vspmech";
+                string password = "Vsp@9599929953";
+                UploadToFTP(ftplocation, file, user, password);
+                save s = new save();
+                s.insert("insert into Share(Friendid,Filename,servername) values('" + textBox1.Text + "','" + label3.Text + "','" + comboBox1.Text + "')");               
+                MessageBox.Show("Successfully Shared");
+            }
+            if (comboBox1.Text == "Server2")
+            {
+                string ftplocation = "ftp://107.180.1.81";
+                string file = lblfilepath.Text; // Or on FreeBSD: "/usr/home/jared/test2.txt";            
+                string user = "vspmech";
+                string password = "Vsp@9599929953";
+                UploadToFTP(ftplocation, file, user, password);
+                save s = new save();
+                s.insert("insert into Share(Friendid,Filename,servername) values('" + textBox1.Text + "','" + label3.Text + "','" + comboBox1.Text + "')");
+                MessageBox.Show("Successfully Shared");
+            }
+            
+        }
+       
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.ShowDialog();
+            label3.Text = file.SafeFileName;
+            lblfilepath.Text = file.FileName;
+           // MessageBox.Show(filename);
+
+        }
+        static void UploadToFTP(String inFTPServerAndPath, String inFullPathToLocalFile, String inUsername, String inPassword)
+        {
+            // Get the local file name: C:\Users\Rhyous\Desktop\File1.zip
+            // and get just the filename: File1.zip. This is so we can add it
+            // to the full URI.
+            String filename = Path.GetFileName(inFullPathToLocalFile);
+
+            // Open a request using the full URI, c/file.ext
+            FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create(inFTPServerAndPath + "/" + filename);
+
+            // Configure the connection request
+            request.Method = WebRequestMethods.Ftp.UploadFile;
+            request.Credentials = new NetworkCredential(inUsername, inPassword);
+            request.UsePassive = true;
+            request.UseBinary = true;
+            request.KeepAlive = false;
+
+            // Create a stream from the file
+            FileStream stream = File.OpenRead(inFullPathToLocalFile);
+            byte[] buffer = new byte[stream.Length];
+
+            // Read the file into the a local stream
+            stream.Read(buffer, 0, buffer.Length);
+
+            // Close the local stream
+            stream.Close();
+
+
+
+
+            // Create a stream to the FTP server
+            Stream reqStream = request.GetRequestStream();
+
+            // Write the local stream to the FTP stream
+            // 2 bytes at a time
+            int offset = 0;
+            int chunk = (buffer.Length > 2048) ? 2048 : buffer.Length;
+            while (offset < buffer.Length)
+            {
+                reqStream.Write(buffer, offset, chunk);
+                offset += chunk;
+                chunk = (buffer.Length - offset < chunk) ? (buffer.Length - offset) : chunk;
+                
+            }
+            // Close the stream to the FTP server
+            reqStream.Close();
+        }
+
+        private void share_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
+    }
+
+}
+
+
+
+
+
+
+OUTPUT:
+
+ 
+
+
+ 
+
+Figure.15.  Output of share 
+8.	PROGRAM OF DOWNLOAD:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Net;
+using System.IO;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace FileSplitter
+{
+    public partial class Download : Form
+    {
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["cloud"].ConnectionString);
+        public Download(string name)
+        {
+            InitializeComponent();
+            label1.Text = name;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        public static string DownloadFile(string FtpUrl, string FileNameToDownload,
+                        string userName, string password, string tempDirPath)
+        {
+            string ResponseDescription = "";
+            string PureFileName = new FileInfo(FileNameToDownload).Name;
+            string DownloadedFilePath = tempDirPath + "/" + PureFileName;
+            string downloadUrl = String.Format("{0}/{1}", FtpUrl, FileNameToDownload);
+            FtpWebRequest req = (FtpWebRequest)FtpWebRequest.Create(downloadUrl);
+            req.Method = WebRequestMethods.Ftp.DownloadFile;
+            req.Credentials = new NetworkCredential(userName, password);
+            req.UseBinary = true;
+            req.Proxy = null;
+            try
+            {
+                FtpWebResponse response = (FtpWebResponse)req.GetResponse();
+                Stream stream = response.GetResponseStream();
+                byte[] buffer = new byte[2048];
+                FileStream fs = new FileStream(DownloadedFilePath, FileMode.Create);
+                int ReadCount = stream.Read(buffer, 0, buffer.Length);
+                while (ReadCount > 0)
+                {
+                    fs.Write(buffer, 0, ReadCount);
+                    ReadCount = stream.Read(buffer, 0, buffer.Length);
+                }
+                ResponseDescription = response.StatusDescription;
+                fs.Close();
+                stream.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return ResponseDescription;
+        }
+
+        private void Download_Load(object sender, EventArgs e)
+        {
+            string query = "select * from [Share] where [Friendid]='" + label1.Text + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+
+                dataGridView1.DataSource = dt;
+
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                label2.Text = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
+                string ftplocation = "ftp://107.180.1.81";
+                string file = label2.Text; // Or on FreeBSD: "/usr/home/jared/test2.txt";
+                string user = "vspmech";
+                string password = "Vsp@9599929953";
+                //UploadToFTP(ftplocation, file, user, password);
+                DownloadFile(ftplocation, file, user, password, @"E:\");
+                MessageBox.Show("File Downloaded Successfully");
+            }
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
+
+
+}
+
+
+OUTPUT:
+ 
+
+
+
+
+ 
+Figure.16. output of Download
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER 6
+
+SCREENSHOTS:
+Below is the series of the screenshots which depict the virtual working of data security by splitinh and merging.
+
+•	First the sql server should be connected.
+
+ 
+
+
+
+
+
+
+
+•	Then the screen will shows the welcome page in which the user has to first register and then has to login in.
+ 
+
+•	Now in registration page user has to register.
+
+ 
+•	Now in login page user need to login first.
+
+ 
+•	After login our home page look like this.
+
+ 
+•	Now we will split the file in whatever parts you want.
+
+•	After splitting it will successful message on screen.
+
+  
+
+•	Now the file wil be encrypt and decrypt .
+
+ 
+
+
+
+•	And to get that same file merge will be used.
+
+ 
+•	Now we share the file using submit button.
+
+ 
+
+ 
+
+•	Then we will download the file.
+
+ 
+
+ 
+
+•	Now we will compress the file
+
+ 
+
+•	At first, we add the file we want to be compress
+
+ 
+•	After adding number of file then we browse the folder to compress
+
+ 
+
+•	At last each file will compress in one RAR file
+
+ 
+•	Now we lock the folder where file are stores
+
+ 
+
+•	Browse the folder to be locked
+
+ 
+
+•	Now hit the OK button and it will ask password
+
+ 
+•	After hitting submit button it will lock the folder
+
+ 
+
+GANTT CHART
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+CONCLUSION
+
+Cloud computing is emerging as a new thing and many of the organizations are moving toward the cloud but lacking due to security reasons. So, cloud security is must which will break the hindrance the acceptance of the cloud by the organizations. There are a lot of security algorithms which may be implemented to the cloud. 
+DES, Triple-DES, AES, and Blowfish etc are some symmetric algorithm. DES and AES are mostly used symmetric algorithms’ is quite simple to implement then AES. 
+RSA and Diffie-Hellman Key Exchange is the asymmetric algorithms. In cloud computing both RSA and Diffie-Hellman Key Exchange is used to generate encryption keys for symmetric algorithms. But the security algorithms which allow operations (like searching) on decrypted data are required for cloud computing, which will maintain the confidentiality of the data. So, we are going to implement Split algorithm so that we can split long file and then after we process the encryption and decryption technique.
+Cloud computing is changing the way IT departments buy IT. Businesses have a range of paths to the cloud, including infrastructure, platforms and applications that are available from cloud providers as online services. Many people may be confused by the range of offerings and the terminology used to describe them and will be unsure of the risk and benefits. Security is a major requirement in cloud computing while we talk about data storage. There are number of existing techniques used to implement security in cloud. In this paper, we discussed number of symmetric and a symmetric algorithm. Our future will be considering some problems related to existing security algorithms and implement a better version of Split algorithm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES
+
+[1] L. Grandinetti, O. Pisacane, M. Sheikhalishahi, "Pervasive Cloud Computing Technologies: Future Outlooks and Interdisciplinary Perspectives”, IGI Publication, Advances in Systems Analysis, Software Engineering, and High-Performance Computing, ISBN-13: 978-1466646834, 2013
+[2] G.R. Vijay, A.R.M. Reddy, “Investigational Analysis of Security Measures Effectiveness in Cloud Computing: A Study”, Computer Engineering and Intelligent Systems, Vol.5, No.7, 2014’
+[3] P. Mell, T. Grance, “The NIST Definition of Cloud Computing Recommendations of the National Institute of Standards and Technology”, Special Publication, pp. 800-145, 2011.
+[4] A. J. Adoga, G. M. Rabiu, A. A. Audu, “Criteria for Choosing An Effective Cloud Storage Provider”, International Journal of Computational Engineering Research, Vol.04, Iss.2, 2014
+[5] R.A. Popa., J.R. Lorch., D. Molnar., H.J. Wang., and L. Zhuang., “Enabling Security in Cloud Storage SLAs with Cloud Proof”, In USENIX Annual Technical Conference, Vol. 242, 2011.
+[6] Y. Tang., P.P.C Lee., J.C.S Lui., and R. Perlman., “FADE: Secure overlay cloud storage with file assured deletion”, In Security and Privacy in Communication Networks, Springer Berlin Heidelberg, pp. 380-397, 2010.
+[7] W. Ren., L. Yu., R. Gao., F. Xiong., “Lightweight and Compromise Resilient Storage    Outsourcing with Distributed Secure Accessibility in Mobile Cloud Computing”, TSINGHUA Science and Technology, Vol. 16, No. 5, pp. 520-528, 2011.
+[8] X. Dong., R. Li., H. He., W. Zhou., Z. Xue., and H. Wu., “Secure Sensitive Data Sharing on a Big Data Platform”, TSINGHUA Science and Technology, Vol. 20, No. 1, pp. 72-80, 2015.
