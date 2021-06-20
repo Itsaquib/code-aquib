@@ -1,3 +1,31 @@
+<?php
+  //check cookies here
+    if(isset($_COOKIE['id']) && isset($_COOKIE['security'])) {
+      $id = addslashes($_COOKIE['id']);
+      $sql = "SELECT * FROM `user_master` WHERE `id`='{$id}'";
+      require_once("./connect.php");
+      $result = $var->query($sql);
+      if($var->error) {
+        exit("SQl ERROR");
+      }
+      if($result->num_rows===0) {
+        exit("illegal operation. <a href='./login.php'> logIn </a>");
+      }
+      // now id is real now check the security: 
+      $data = $result->fetch_array();
+      $result->free();
+      $shell = md5($data['id'].$data['password']."its_aquib_shaikh_cookies");
+      $var->close();
+      if($shell === $_COOKIE['security']) {
+        echo "welcome to Crud Operation <br>";
+        echo "{$data['email_id']}";
+      } else {
+        exit("Error. <a href='./login.php'> Login </a>");
+    }
+    } else {
+      exit("Please Login First. <a href='./login.php'> Login </a>");
+    }
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +39,15 @@
 <title>Crud operation </title>
 </head>
 <body>
-<?php 
-    require_once("./connect.php");
+
+
+  <?php
     if(!empty($_POST["submit"])) {
         if(empty($_POST['fullName']) || empty($_POST['emailId']) || empty($_POST['phoneNumber']) || empty($_POST['password'])) {
             echo "please fill of field";
         }
         $insert = "INSERT INTO `user_data` SET `full_name`='{$_POST['fullName']}', `email_id`='{$_POST['emailId']}', `phone_no`='{$_POST['phoneNumber']}', `password`='{$_POST['password']}'";
+        require_once("./connect.php");
         $out = $var->query($insert);
         if ($out === true) {
             echo "insert to database";
@@ -25,17 +55,8 @@
             echo "something goes wrong";
         }
     }
-
     ?>
-    <!-- Add the following at the end of your body tag -->
-    <!-- <div class="text-center q-pa-md row justify-between">
-    <form action="" method="POST">
-    Engine : <input type="text" name="engine" value=""> <br>
-    Transmission : <input type="text" name="transmission" value=""><br>
-    Door No. : <input type="number" name="door_no" value=""><br>
-    age : <input type="number" name="age" value=""><br>
-    <input type="submit" name="submit" value="submit">
-    </form></div> -->
+    <h1> <a href="logout.php"> Logout</a> </h1>
 
     <form class="p-5" action="" method="POST">
   <div class="form-group">

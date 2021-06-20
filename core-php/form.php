@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container-fluid bg-primary text-white">
- <form action="./process.php" method='post'>
+ <form action="./process.php" method='get'>
  username : <input type="text" name="name" value="" placeholder="username" />
  password : <input type="password" name="password" value="" placeholder="password" />
  <input type="submit" name="submit" value="submit" />

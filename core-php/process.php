@@ -5,6 +5,9 @@
         echo "<br>";
         echo "this is password :" .$_GET['password'];
     }
+    else  {
+        echo "please check the method";
+    }
 ?>
 
 <?php 

@@ -13,7 +13,7 @@
 <body>
 <?php 
     if(!empty($_POST['submit'])) {
-        if(empty($_POST['emailId']) || empty($_POST['password ']))  {
+        if(empty($_POST['emailId']) || empty($_POST['password']))  {
            exit("please fill of field. <a href='./login.php'> return </a>");
         }
         $emailId = addslashes($_POST['emailId']);
@@ -33,6 +33,10 @@
         $check->free();
         $var->close();
         if($password === $array['password']) {
+          // set cookies here 
+          setcookie("id",$array['id'],0,"/");
+          $security = md5($array['id'].$array['password']."its_aquib_shaikh_cookies");
+          setcookie("security",$security,0,"/" );
             header("Location: crud.php");
         } else {
             exit("password is wrong.   <a href='./login.php'> return </a>");
