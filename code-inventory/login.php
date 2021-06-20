@@ -27,7 +27,12 @@
     $db->close();
     $password = md5($_POST['password']);
     if($password === $array['password']) {
-      header("Location: index.php");
+      // set cookies here 
+      setcookie("id", $array['id'],0,"/");
+      $verify = md5($array['id'].$array['password']."Don");
+      setcookie("verify", $verify,0,"/");
+      // path to new location
+      header("Location: inventory.php");
     } else {
       exit("Worng Password . <a href='./login.php'>return </a>");
     }
